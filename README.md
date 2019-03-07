@@ -4,7 +4,7 @@ I wanted to store my keystroke usage in vim so I could
 * know whether an annoyance I face in editing is actually a constant pattern, or if I'm just falling prey to the availability heuristic.
 So I forked this, modified the log file location, and added `activeAppWatch` so I could ignore everything not typed into `iTerm2` (my terminal emulator of choice).
 
-Also, something that tripped me up: since `activeAppWatch` is a goes in the startup scripts locaiton, at least one of the following must be true (couldn't figure out which when debugging -- again, didn't want to spend too much time on this, and I'm not worried about security on my personal laptop):
+Also, something that tripped me up: since `activeAppWatch` goes in the startup scripts locaiton, at least one of the following must be true (couldn't figure out which when debugging -- again, didn't want to spend too much time on this, and I'm not worried about security on my personal laptop):
 * only absolute paths when `printf`ing in the script
 * the log file must be writable by `others` (`chmod 666 .log`)
 
