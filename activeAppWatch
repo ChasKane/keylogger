@@ -1,0 +1,9 @@
+#! /bin/bash
+activeApp=''
+while true; do
+    newActiveApp=`osascript -e 'tell application "System Events" to get name of application processes whose frontmost is true and visible is true'`
+    if [ "$newActiveApp" != "$activeApp" ]; then
+        printf "\n\n$newActiveApp" >> /Users/youngsage/.log;
+        activeApp=$newActiveApp
+    fi
+done

