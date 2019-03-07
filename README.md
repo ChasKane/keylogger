@@ -1,4 +1,4 @@
-#@ChasKane Fork Notes
+# @ChasKane Fork Notes
 I wanted to store my keystroke usage in vim so I could
 * track which plugins I'm using the most so I can have a list of features I might need if I switch to another text editor,
 * know whether an annoyance I face in editing is actually a constant pattern, or if I'm just falling prey to the availability heuristic.
